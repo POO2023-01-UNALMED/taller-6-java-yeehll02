@@ -30,17 +30,17 @@ public class Fabricante  {
 		
 		
 	}
-	public String getnombre() {
+	public String getNombre() {
 		return nombre;
 	}
-	public void setnombre(String nombre) {
+	public void setNombre(String nombre) {
 		this.nombre=nombre;
 	}
 	
-	public Pais getpais() {
+	public Pais getPais() {
 		return pais;
 	}
-	public void setpais(Pais pais) {
+	public void setPais(Pais pais) {
 		this.pais=pais;
 	}
 }

@@ -22,21 +22,21 @@ public class Vehiculo {
 		this.fabricante=fabricante;
 		cantidadVehiculos++;
 		
-		if (Pais.paises.contains(fabricante.getpais().getnombre())) {
-			int x=Pais.paises.indexOf(fabricante.getpais().getnombre())+1;
+		if (Pais.paises.contains(fabricante.getPais().getNombre())) {
+			int x=Pais.paises.indexOf(fabricante.getPais().getNombre())+1;
 			int y=Integer.parseInt(Pais.paises.get(x))+1;
 			Pais.paises.set(x,String.valueOf(y));
 		}else {
-			Pais.paises.add(fabricante.getpais().getnombre());
+			Pais.paises.add(fabricante.getPais().getNombre());
 			Pais.paises.add("1");
 		}
 		
-		if (Fabricante.fabricantes.contains(fabricante.getnombre())) {
-			int x=Fabricante.fabricantes.indexOf(fabricante.getnombre())+1;
+		if (Fabricante.fabricantes.contains(fabricante.getNombre())) {
+			int x=Fabricante.fabricantes.indexOf(fabricante.getNombre())+1;
 			int y=Integer.parseInt(Fabricante.fabricantes.get(x))+1;
 			Fabricante.fabricantes.set(x,String.valueOf(y));
 		}else {
-			Fabricante.fabricantes.add(fabricante.getnombre());
+			Fabricante.fabricantes.add(fabricante.getNombre());
 			Fabricante.fabricantes.add("1");
 		}
 		
@@ -49,10 +49,10 @@ public class Vehiculo {
 		return "Automoviles: " +cantAut+"\nCamionetas: "+cantCamionetas+"\nCamiones: " + cantCamiones;
 	}
 	
-	public static int getcantidadVehiculos() {
+	public static int getCantidadVehiculos() {
 		return cantidadVehiculos;
 	}
-	public static void setcantidadVehiculos(int cantidadVehiculos) {
+	public static void setCantidadVehiculos(int cantidadVehiculos) {
 		cantidadVehiculos=cantidadVehiculos;
 	}
 
